@@ -1,0 +1,25 @@
+{
+  "name": "@pihole-viz/web",
+  "version": "0.3.3",
+  "type": "module",
+  "dependencies": {
+    "@pihole-viz/shared": "*",
+    "d3-force": "^3.0.0",
+    "pixi.js": "^8.5.0",
+    "tldts": "^6.1.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@types/d3-force": "^3.0.0",
+    "jsdom": "^25.0.0",
+    "svelte": "^5.0.0",
+    "typescript": "^5.5.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest run"
+  }
+}

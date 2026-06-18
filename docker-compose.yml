@@ -1,0 +1,12 @@
+services:
+  pihole-viz:
+    build: .
+    container_name: pihole-viz
+    env_file: .env
+    environment:
+      PIHOLE_URL: ${PIHOLE_URL:-http://pi.hole}
+      PORT: 5641
+      HOST: 0.0.0.0
+    ports:
+      - "8089:5641"
+    restart: unless-stopped

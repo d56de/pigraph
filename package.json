@@ -1,0 +1,12 @@
+{
+  "name": "pihole-viz",
+  "private": true,
+  "type": "module",
+  "workspaces": ["shared", "server", "web"],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "dev:server": "npm run dev -w server",
+    "dev:web": "npm run dev -w web",
+    "build": "npm run build -w web"
+  }
+}

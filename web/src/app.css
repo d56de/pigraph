@@ -1,0 +1,22 @@
+:root {
+  --bg: #0b0d12;
+  --panel: rgba(22, 26, 34, 0.9);
+  --panel-border: #2a3040;
+  --text: #e8eaf0;
+  --text-dim: #8b93a8;
+  --client: #a89df8;
+  --allowed: #86efac;
+  --blocked: #fca5a5;
+  --forwarded: #fbbf24;
+  font-family: -apple-system, "SF Pro Text", "Segoe UI", sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: var(--bg);
+  color: var(--text);
+}
